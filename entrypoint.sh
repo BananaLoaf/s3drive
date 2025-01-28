@@ -5,7 +5,7 @@ mkdir -p /root/.config/rclone
 cat << EOF > /root/.config/rclone/rclone.conf
 [gdrive]
 type = drive
-scope = drive.file
+scope = ${RCLONE_GDRIVE_SCOPE}
 token = ${RCLONE_GDRIVE_TOKEN}
 team_drive = 
 
